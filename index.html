@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>:: Yweb :: Galeri Pramuka ::</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+	
+		
+<div id="wrapper"> 
+	<div id="container"> 
+		<header>Galeri Pramuka</header> <!--HTML5 -->
+			<b><i><marquee direction="right" scrollamount=4 align="center" behavior="alternate">Satya ku kudarmakan Darma ku kubaktikan</marquee></i></b>
+		<nav>
+			<ul> 
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="informasi.html">Informasi</a></li>
+				<li><a href="artikel.html">Artikel</a></li>
+				<li><a href="foto.html">Foto</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="kontak.html">Kontak</a></li> 
+			</ul>
+		</nav> <!--HTML5 --> 
+	<div id="content">
+	<div id="single" style="width:580px;">
+	<button id="tampil">Tampilkan Jam</button><br/>
+	<span id="tampilanJam"></span>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tampil').click(function(){
+				setInterval(function(){
+					var date = new Date();
+					$('#tampilanJam').html("Jam Sekarang : " + date.toLocaleTimeString());
+				}, 1000);
+			});
+		});
+	</script>
+	<br>
+	<br>
+	<div id="accordion">
+			<h2>Berita Terkini</h2>
+				<div>
+				<div id="featured-image"
+				style="background:url(images/berita-1.jpg)">&nbsp;</div>
+				<p>
+				<h3>Budi Waseso: Penunjukan SBY dan Megawati Jadi Penasihat Pramuka Tak Politis</h3>
+				Liputan6.com, Jakarta - Ketua Kwartir Nasional Gerakan Pramuka, Budi Waseso menegaskan penunjukkan Bacharuddin Jusuf Habibie, Megawati Soekarnoputri, Susilo Bambang Yudhoyono, sampai Nadiem Makarim sebagai Dewan Penasihat Nasional Gerakan Pramuka tidak bermuatan politis.<br>
+				"Jadi ini murni sebagai pembinaan generasi muda," kata Budi Waseso di Istana Negara, Jakarta, Kamis (27/12/2018).<br>
+				
+				<div id="more"><a href="berita-1.html">[Baca Selengkapnya]</a></div></p>
+				</div>
+			<h2>Berita Terkini</h2>
+				<div>
+				<div id="featured-image"
+				style="background:url(images/berita-2.jpeg)">&nbsp;</div>
+				<p>
+				<h3>Gerakan Pramuka Diharapkan Bisa Ikuti Perkembangan Zaman</h3>
+				Jakarta - Sekretaris Jenderal KLHK Bambang Hendroyono, yang juga sebagai Ketua Pimpinan Saka (Kapimsaka) Kalpataru dan Wanabakti Nasional, mengatakan Gerakan Pramuka harus melakukan revitalisasi agar dapat membentuk insan Pancasila yang tangguh, berakhlak mulia, dan inovatif. Menurutnya, revitalisasi Gerakan Pramuka diperlukan karena tantangan yang dihadapi generasi muda saat ini berbeda dengan masa lalu. <br>
+				<div id="more"><a href="berita-2.html">[Baca selengkapnya]</a></div>
+				</p>
+				</div>
+			<h2>Berita Terkini</h2>
+				<div>
+				<div id="featured-image"
+				style="background:url(images/berita-3.jpeg)">&nbsp;</div>
+				<p>
+				<h3>Tsunami Selat Sunda, Buwas Kerahkan Pramuka dan Bangun Dapur Umum</h3>
+				Jakarta - Ketua Kwarnas Gerakan Pramuka Budi Waseso (Buwas) sudah mengerahkan anggotanya dan mendirikan dapur umum di lokasi terdampak tsunami Selat Sunda. Dapur umum didirikan di pesisir Banten dan Lampung. <br>
+				<div id="more"><a href="berita-3.html">[Baca selengkapnya]</a></div>
+				</p>
+				</div>
+				
+		</div> 
+	</div>
+	</div>
+	<div id="sidebar">
+			<li class="widget"> 
+			<h2>Popular Post</h2> 
+			<ul>
+				<li><a href="berita-1.html">Budi Waseso: Penunjukan SBY dan Megawati Jadi Penasihat Pramuka Tak Politis</a></li> 
+				<li><a href="berita-2.html">Gerakan Pramuka Diharapkan Bisa Ikuti Perkembangan Zaman</a></li> 
+				<li><a href="berita-3.html">Tsunami Selat Sunda, Buwas Kerahkan Pramuka dan Bangun Dapur Umum</a></li> 
+			</ul>
+		</li>
+		<li class="widget"> 
+			<h2>Commented Post</h2> 
+			<ul> 
+				<li><a href="berita-1.html">Budi Waseso: Penunjukan SBY dan Megawati Jadi Penasihat Pramuka Tak Politis</a></li> 
+				<li><a href="berita-2.html">Gerakan Pramuka Diharapkan Bisa Ikuti Perkembangan Zaman</a></li> 
+				<li><a href="berita-3.html">Tsunami Selat Sunda, Buwas Kerahkan Pramuka dan Bangun Dapur Umum</a></li> 
+			</ul>
+		</li>
+		<li class="widget">
+			<h2>Audio Streaming</h2>
+			<audio id="audio" controls>
+			<source src="sounds/sound.mp3" type="audio/mpeg">
+			</audio>
+		</li>
+	</div> 
+	<div id="footer">
+		<footer> <!--HTML5 --> 
+			<div id="column">
+				<h2>Dapatkan Bantuan dan Dukungan</h2>
+				Untuk mendapatkan petunjuk atau dukungan dari kami, kunjungi situs <a href="support.html">supportYweb</a> dan submit form anda.
+			</div>
+			<div id="column">
+				<h2>Hubungi Kami</h2>
+				Jl. Agung <br>
+				Surakarta 57127 Jawa Tengah<br>
+				(+628) 95392300768
+			</div> 
+			<div id="column">
+				<h2>Temukan Kami di ...</h2>
+				<a href="http://facebook.com/Yulia-Nuraini">Facebook</a><br>
+				<a href="https://www.instagram.com/yuliaexotic/">Instagram</a><br>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

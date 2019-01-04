@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>:: Yweb :: Galeri Pramuka ::</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="jquery-ui.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 200px; padding: 0.4em; position: relative; background: #D2691E; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+   <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var state = true;
+    $( "#button" ).on( "click", function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#D2691E",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#D2691E",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+  </script>
+</head>
+<body>
+<div id="wrapper"> 
+	<div id="container"> 
+		<header>Galeri Pramuka</header> <!--HTML5 -->
+			<b><i><marquee direction="right" scrollamount=4 align="center" behavior="alternate">Satya ku kudarmakan Darma ku kubaktikan</marquee></i></b>
+		<nav>
+			<ul> 
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="informasi.html">Informasi</a></li>
+				<li><a href="artikel.html">Artikel</a></li>
+				<li><a href="foto.html">Foto</a></li>
+				<li><a href="video.html">Video</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="kontak.html">Kontak</a></li> 
+			</ul>
+		</nav> <!--HTML5 --> 
+	<div id="content">
+		<div class="toggler">
+		<div id="effect" class="ui-widget-content ui-corner-all">
+		<h3 class="ui-widget-header ui-corner-all">Tri Satya</h3>
+		<p>
+		Demi kehormatanku aku berjanji akan bersungguh-sungguh : <br>
+		1. Menjalankan kewajibanku terhadap Tuhan dan Negara Kesatuan Republik Indonesia. <br>
+		2. Menolong sesama hidup dan ikut serta membangun masyarakat.<br>
+		3. Menepati Dasa Dharma.<br>
+		<br>
+		</p>
+		<button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+		</div></div>
+		
+		
+		</div>
+		
+	
+	
+	<div id="sidebar">
+			<li class="widget"> 
+			<h2>Popular Post</h2> 
+			<ul>
+				<li><a href="berita-1.html">Budi Waseso: Penunjukan SBY dan Megawati Jadi Penasihat Pramuka Tak Politis</a></li> 
+				<li><a href="berita-2.html">Gerakan Pramuka Diharapkan Bisa Ikuti Perkembangan Zaman</a></li> 
+				<li><a href="berita-3.html">Tsunami Selat Sunda, Buwas Kerahkan Pramuka dan Bangun Dapur Umum</a></li> 
+			</ul>
+		</li>
+		<li class="widget"> 
+			<h2>Commented Post</h2> 
+			<ul> 
+				<li><a href="berita-1.html">Budi Waseso: Penunjukan SBY dan Megawati Jadi Penasihat Pramuka Tak Politis</a></li> 
+				<li><a href="berita-2.html">Gerakan Pramuka Diharapkan Bisa Ikuti Perkembangan Zaman</a></li> 
+				<li><a href="berita-3.html">Tsunami Selat Sunda, Buwas Kerahkan Pramuka dan Bangun Dapur Umum</a></li> 
+			</ul>
+		</li>
+		<li class="widget">
+			<h2>Audio Streaming</h2>
+			<audio id="audio" controls>
+			<source src="sounds/sound.mp3" type="audio/mpeg">
+			</audio>
+		</li>
+	</div> 
+	<div id="footer">
+		<footer> <!--HTML5 --> 
+			<div id="column">
+				<h2>Dapatkan Bantuan dan Dukungan</h2>
+				Untuk mendapatkan petunjuk atau dukungan dari kami, kunjungi situs <a href="support.html">supportYweb</a> dan submit form anda.
+			</div>
+			<div id="column">
+				<h2>Hubungi Kami</h2>
+				Jl. Agung <br>
+				Surakarta 57127 Jawa Tengah<br>
+				(+628) 95392300768
+			</div> 
+			<div id="column">
+				<h2>Temukan Kami di ...</h2>
+				<a href="http://facebook.com/Yulia-Nuraini">Facebook</a><br>
+				<a href="https://www.instagram.com/yuliaexotic/">Instagram</a><br>
+			</div>
+		</footer>
+	</div>
+	</div>
+</div>
+</body>
+</html>
